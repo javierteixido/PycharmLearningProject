@@ -36,13 +36,19 @@ class GameController:
 
     def game_status(self):
         print(f" Table cards:")
+
+        # print player hands
         print(f" Player: ")
         for hand in self.player_hands.keys():
             print(self.player_hands[hand])
-        print(f" Crupier: ")
+
+        # print dealer hands
+        print(f" Dealer: ")
         for hand in self.dealer_hands.keys():
             print(self.dealer_hands[hand])
         print("")
+
+        # print remaining deck
         print("Remaining cards:")
         for brand in self.deck.keys():
             print(f"{brand}: {self.deck[brand]}")
